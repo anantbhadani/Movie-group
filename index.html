@@ -1,0 +1,206 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Ticket Booking System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Movie Ticket Booking System</h1>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Cinemas</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+      <aside>
+        <h2>Filter Movies</h2>
+        <form>
+          <label for="genre">Genre:</label>
+          <select id="genre">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+          </select>
+          <label for="rating">Rating:</label>
+          <select id="rating">
+            <option value="4">4 Stars and Above</option>
+            <option value="3">3 Stars and Above</option>
+            <option value="2">2 Stars and Above</option>
+            <option value="1">1 Star and Above</option>
+          </select>
+          <input type="submit" value="Apply Filters">
+        </form>
+      </aside>
+      <main>
+          <div class="slider">
+            <div><img src="images/Ant-man Wasp.jpg" alt="Avengers: Endgame"></div>
+            <div><img src="images/Aquaman.jpg" alt="Black Widow"></div>
+            <div><img src="images/Inception.jpg" alt="Popcorn"></div>
+          </div>
+          
+          <label for="slider">Slide to change image:</label>
+          <input type="range" id="slider" min="0" max="2" value="0" step="1" oninput="document.querySelector('.slider').scrollLeft = this.value * document.querySelector('.slider > div').offsetWidth;">         
+      <section>
+        <h2>Now Playing</h2>
+        <p>Avengers: Endgame</p>
+        <img src="images/Ant-man Wasp.jpg" alt="Avengers: Endgame" width="300px">
+        <p><a href="#" class="book-now">Book Now</a></p>
+      </section>
+      <section>
+        <h2>Now Playing</h2>
+        <p>Avengers: Endgame</p>
+        <img src="images/Aquaman.jpg" alt="Avengers: Endgame" width="300px">
+        <p><a href="#" class="book-now">Book Now</a></p>
+      </section>
+      <section>
+        <h2>Now Playing</h2>
+        <p>Avengers: Endgame</p>
+        <img src="images/Inception.jpg" alt="Avengers: Endgame" width="300px">
+        <p><a href="#" class="book-now">Book Now</a></p>
+      </section>
+      <section>
+        <h2>Now Playing</h2>
+        <p>Avengers: Endgame</p>
+        <img src="images/John Wick.jpg" alt="Avengers: Endgame" width="300px">
+        <p><a href="#" class="book-now">Book Now</a></p>
+      </section>
+    </div>
+    <footer>
+      
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Ticket Booking System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Movie Ticket Booking System</h1>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="seat-booking/cinemahall.html">Book Seat</a>
+      <a href="food-website-main/index.html">Book Meals</a>
+    </nav>
+    <div class="container">
+      <section class="left-section">
+        <aside>
+          <h2>Filter Movies</h2><br>
+          <form action="/action_page.php">
+            <label for="genre">Genre:</label>
+            <select id="genre">
+              <option value="action">Action</option>
+              <option value="comedy">Comedy</option>
+              <option value="drama">Drama</option>
+              <option value="horror">Horror</option>
+            </select>
+            <label for="rating">Rating:</label>
+            <select id="rating">
+              <option value="4">4 Stars and Above</option>
+              <option value="3">3 Stars and Above</option>
+              <option value="2">2 Stars and Above</option>
+              <option value="1">1 Star and Above</option>
+            </select>
+            <input type="submit" value="Apply Filters">
+          </form>
+        </aside>
+      </section>      
+      <section class="login-area">
+        <h2>Login</h2><br>
+        <form action="/action_page.php">
+          <label for="username">UserName</label>
+          <input type="text" id="fname" name="fname">
+          <label for="Password">Password:</label>
+          <input type="text" id="lname" name="lname"><br>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </form> 
+      </section>
+      <main>
+        <!-- <section class="slider">
+          <div><img src="images/Ant-man Wasp.jpg" alt="Ant-man Wasp" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/Aquaman.jpg" alt="Aquaman" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/Inception.jpg" alt="Inception" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/John Wick.jpg" alt="John Wick" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/matrix.jpg" alt="matrix" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/movie1.jpg" alt="movie1" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/movie2.jpg" alt="movie2" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/movie3.jpg" alt="movie3" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/parasite.jpg" alt="parasite" style="width: 100%; height: 100%; object-fit: cover;"></div>
+          <div><img src="images/Shazam.jpg" alt="Shazam" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        </section> -->
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/img1.webp" alt="Ant-man Wasp">
+            </div>
+            <div class="carousel-item">
+              <img src="images/img 2.jpg" alt="Aquaman">
+            </div>
+            <div class="carousel-item">
+              <img src="images/img 3.jpg" alt="Inception">
+            </div>
+            <div class="carousel-item">
+              <img src="images/img 4.jpg" alt="John Wick">
+            </div>
+            <div class="carousel-item">
+              <img src="images/img 5.jpg" alt="matrix">
+            </div>
+            <div class="carousel-item">
+              <img src="images/img 6.jpg" alt="parasite">
+            </div>
+            <div class="carousel-item">
+              <img src="images/img 7.webp" alt="Shazam">
+            </div>
+          </div>
+        </div>        
+        <section>
+          <h2>Now Playing</h2>
+          <p>Ant-man</p>
+          <img src="images/Ant-man Wasp 1.jpg" alt="Ant-man" width="300px">
+          <p><a href="#" class="book-now">Book Now</a></p>
+        </section>
+        <section>
+          <h2>Now Playing</h2>
+          <p>Aquaman</p>
+          <img src="images/Aquaman 1.jpg" alt="Aquaman" width="300px">
+          <p><a href="#" class="book-now">Book Now</a></p>
+        </section>
+        <section>
+          <h2>Now Playing</h2>
+          <p>Inception</p>
+          <img src="images/Inception 1.jpg" alt="Inception" width="300px">
+          <p><a href="#" class="book-now">Book Now</a></p>
+        </section>
+        <section>
+          <h2>Now Playing</h2>
+          <p>John Wick</p>
+          <img src="images/John Wick 1.jpg" alt="John Wick" width="300px">
+          <p><a href="#" class="book-now">Book Now</a></p>
+        </section>
+      </main>
+    </div>
+    <footer>
+    
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
